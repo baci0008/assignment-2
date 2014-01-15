@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* CSS Document */
+	
+body {
+	background-image: url(../images/column.svg);
+	background-size: 100%;
+	min-width: 768px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5rem;
+}
+
+.baseline {
+	background-image: url(../images/baseline.svg);
+}
+
+p {
+	margin-bottom: 1.5rem;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+	font-family:'Baumans', cursive, monospace;
+}
+
+strong {
+	font-weight: bold;
+}
+
+img {
+	width: 100%;
+}
+
+ul {
+	line-height: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+li {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+ol li {
+	list-style-type: decimal;
+}
+
+/* --------------------------------------------------------------------- Masthead */
+
+.masthead {
+	background-color: rgba(99,100,102,1);
+	height: 9.5rem;
+	position: fixed;
+	width: 100%;
+	z-index: 100; /* Puts this element on top of the rest */
+}
+
+.logo {
+	width: 9.5rem;
+	position: absolute;
+	float: left;
+	margin-left: 8rem;
+	z-index: 100;
+}
+
+nav ul {
+	position: absolute;
+	width: 100%;
+	height: 3rem;
+	top: 6rem;
+	background-color: #CCC;
+	text-align: right;  
+}
+
+nav li {
+	display: inline;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+	display: inline-block;
+	height: 3rem;
+	margin: 0 2%;
+	padding: .8rem 3%;
+	font-family:'Baumans', cursive, monospace;
+	font-size: 2rem;
+	color: rgba(99,100,102,1);
+	text-decoration: none;
+}
+
+nav a:hover, 
+nav a:focus,
+nav a:active {
+	background-color:rgba(215,223,33,1);
+}
+
+/* --------------------------------------------------------------------- Content */
+
+.wrapper {
+	overflow: hidden; /* Will wrap around its children when they float */ 
+	padding-top: 4.5rem;
+}
+
+#home, /* # hooks an ID */
+#about,
+#portfolio {
+	clear: both;   /* Will stack after each other if their children have floats */
+	padding: 12rem 10.25%;
+	overflow: hidden;
+}
+
+#home {
+	background-image: url(../images/pattern.jpg);
+	background-position: center center;
+}
+
+#about {
+	background-image: url(../images/pattern2.jpg);
+}
+
+#portfolio {
+	background-image: url(../images/pattern3.jpg);
+	}
+
+/* --------------------------------------------------------------------- home */
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+	font-family:'Baumans', cursive, monospace;
+}
+
+h2 {
+	color: rgba(215,223,33,1);
+	font-size: 5rem;
+	font-weight: bold;
+	margin-top: 3rem;
+	position: absolute;
+	z-index: 100;
+	line-height: 100px;
+}
+
+.billboard {
+	height: 35rem;
+	width: 100%;
+	position: relative; 
+	border: 8px solid rgba(255,255,255,1);
+	border-radius: 30px;
+	box-shadow: 8px 14px 10px 0 rgba(0,0,0,.5);
+}
+
+/* --------------------------------------------------------------------- About Me */
+
+.myphoto {
+	height: 15rem;
+	width: 28%;
+	float:left;
+	margin: 3rem 4% 1.5rem 0;
+	border: 8px solid rgba(215,223,33,1);
+	border-radius: 30px;
+	box-shadow: 8px 14px 10px 0 rgba(0,0,0,.5);
+}
+
+h4 {
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 2rem;
+	margin-top: 4.5rem;
+	line-height: 35px;
+}
+
+h5 {
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 1.5rem;
+	font-family:'Baumans', cursive, monospace;
+}
+
+/* --------------------------------------------------------------------- Portfolio */
+
+.artwork {
+	width: 47.5%;
+	margin-right: 5%;
+	float:left;
+	margin-top: 3rem;
+	border: 10px solid rgba(255,255,255,1);
+	border-radius: 15px;
+	box-shadow: 8px 14px 10px 0 rgba(0,0,0,.5);
+}
+
+.artwork:nth-child(2n+2) { /* Every 2nd div will have these proprties */ 
+	margin-right: 0;
+}
+
+h6 {
+	font-size: 1rem;
+	text-align: center;
+}
+
+/* --------------------------------------------------------------------- Footer */
+
+.bottom {
+	background-color: #333;
+	height: 15rem;
+	padding: 1.5rem 10%;
+}
+
+.bottom p {
+	float:left;
+	color: #FFF;
+	font-size: 1rem;
+}	
+
+.social {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.social img {
+	width: 6rem;
+}
+
+.social li {
+	display: inline;
+	margin:1rem;
+}
+
+.social li:nth-child(2n+2) {
+	margin-right: 0;
+}		
